@@ -18,13 +18,13 @@ var (
 	configPathsConfig = flag.String("c", "", "config file path, also support http(s) url")
 	filterRegexConfig = flag.String("f", ".+", "filter proxies by name, use regexp")
 	serverURL         = flag.String("server-url", "https://speed.cloudflare.com", "server url")
-	downloadSize      = flag.Int("download-size", 2*1024*1024, "download size for testing proxies")
+	downloadSize      = flag.Int("download-size", 1*1024*1024, "download size for testing proxies")
 	uploadSize        = flag.Int("upload-size", 1*1024*1024, "upload size for testing proxies")
 	timeout           = flag.Duration("timeout", time.Second*5, "timeout for testing proxies")
 	concurrent        = flag.Int("concurrent", 4, "download concurrent size")
 	outputPath        = flag.String("output", "", "output config file path")
-	maxLatency        = flag.Duration("max-latency", 800*time.Millisecond, "filter latency greater than this value")
-	minSpeed          = flag.Float64("min-speed", 5, "filter speed less than this value(unit: MB/s)")
+	maxLatency        = flag.Duration("max-latency", 4000*time.Millisecond, "filter latency greater than this value")
+	minSpeed          = flag.Float64("min-speed", 1, "filter speed less than this value(unit: MB/s)")
 )
 
 const (
