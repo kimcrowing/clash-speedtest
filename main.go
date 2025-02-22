@@ -7,7 +7,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/faceair/clash-speedtest/speedtester"
+	"github.com/kimcrowing/clash-speedtest/speedtester"
 	"github.com/metacubex/mihomo/log"
 	"github.com/olekukonko/tablewriter"
 	"github.com/schollz/progressbar/v3"
